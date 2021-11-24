@@ -21,6 +21,7 @@ function Form() {
       
         
         <div className="App">
+            <h1> Vote for a better country</h1>
        
     <div className="voters">
         <fieldset>
@@ -65,6 +66,7 @@ function Form() {
         <p>{voters.idNumber}</p>
         <p>{voters.place}</p>
         <p>{voters.vote}</p>
+       
         <Delete />
         <hr />
       </p>

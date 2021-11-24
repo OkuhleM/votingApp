@@ -1,22 +1,29 @@
 import React, { Component } from 'react'
 
 export default class Delete extends Component {
-    constructor(props){
-        super(props)
+    constructor(){
+        super()
         this.state = {
-            items: []
+            data: [  
+            {id:1, name: '', place: '', vote: ''},
+            {id:2, name: '', place: '', vote: ''},
+            {id:3, name: '', place: '', vote: ''},
+            {id:4, name: '', place: '', vote: ''},
+            {id:5, name: '', place: '', vote: ''},
+            {id:6, name: '', place: '', vote: ''}]
         }
+        this.handleRemove = this.handleRemove.bind(this)
     }
 
  handleRemove = (index) => {
-     alert('this item will be deleted')
-     var itemToBeDeleted = this.state.items.filter((_item)=>{
-         return _item != index
-     });
+     console.log(index)
+     alert('this data will be deleted')
+     var itemToBeDeleted = this.state.data.filter((item) => item !== index)
      this.setState({
-         items: itemToBeDeleted
+            data: itemToBeDeleted
      })
- }
+     };
+ 
     render() {
         return (
             <div className="Delete">

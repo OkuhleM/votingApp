@@ -1,3 +1,10 @@
+# Voting App
+This App Allows you to Enter your Details in the input fields.
+After inputing your details the App will capture them and return them right after the input field set.
+When you click submit your form will be sent and captured.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
